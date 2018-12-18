@@ -255,7 +255,7 @@ function CPriestBot:ListObjects()
 	if pc:GetType() ~= 2 and  --drops are type 2 then we ignore them
 	   oid > 0x10000 and  --npcs oids are usually < 0x10000, not a safe way but works
 	   pc:GetHealth() > 0 and --ignore if dead
-	   pc:GetMaxHealth() > 150000.0 
+	   pc:GetMaxHealth() > 15000.0 
 	   then --this check is for identifying targets in lulu village map, also, without this pets and players are also listed (an uid will be added soon)	   
 	   if oid ~= self.myPC:GetOID() then	    
 	    
